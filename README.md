@@ -1,2 +1,2 @@
 # JustDoIt
-My firsy project in React
+My first project in React
