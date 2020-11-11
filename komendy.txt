@@ -1,0 +1,8 @@
+
+c:/php/php -S localhost:8000
+Projekt PHP
+1.Strona z zamowieniami
+Imie i nazwisko , adres,ilosc paczkow , ilosc grzebieni , cena 
+2.Strona z podziekowaniem i zapis do bazy danych  insert
+3.strona adminowa wyswietlanie wszystkich zamowien select
+4. cena paczkow i grzebieni globalnie zdefinowana
