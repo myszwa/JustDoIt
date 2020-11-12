@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
                                                 <title>Online Store</title>
-</head>
 
+</head>
 
 <body>
 <h1> Online Store  </h1>
-
 
 <form action="welcome.php" method="post">
 Name: <input type="text" name="name"><br>
@@ -19,10 +18,8 @@ Ciastka: <input type="text" name="ciastka"><br>
 
 </form>
 
-
-
-
-
+<h2> To do list </h2>
+<a href="todo.html"><button>Go To ToDoList</button></a>
 
 
 

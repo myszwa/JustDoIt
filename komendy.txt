@@ -6,3 +6,26 @@ Imie i nazwisko , adres,ilosc paczkow , ilosc grzebieni , cena
 2.Strona z podziekowaniem i zapis do bazy danych  insert
 3.strona adminowa wyswietlanie wszystkich zamowien select
 4. cena paczkow i grzebieni globalnie zdefinowana
+
+
+$(document).ready(function(){
+    $("#add").on("click", function() {
+        var val = $("input").val();
+        if(val!== '') {
+            var elem = $("<li></li>").text(val);
+            $(elem).append("<button class='rem'>X</button>");
+            $("#mylist").append(elem);
+            $("input").val("");
+            $(".rem").on("click" ,function() {
+                $(this).parent().remove();
+            });
+
+        }
+    });
+});
+});
+
+
+<?php
+echo file_get_contents("todo.html");
+?>

@@ -1,0 +1,7 @@
+git clone https://github.com/myszwa/JustDoIt.git
+git pull origin master
+cd JustDoIt.git
+git checkout -b myszwa/add-file
+git status
+git add . && git commit -m "Added tested file"
+git push origin 'myszwa/add-file'
