@@ -10,6 +10,13 @@
 <h2> Baza zamowien </h2>
 <?php
 
+if (!empty($_POST))
+{
+    // handle post data
+    $fromPerson = '+from%3A'.$_POST['fromPerson'];
+    echo $fromPerson;
+}
+
 
 
  $imie = $_POST["name"];
@@ -21,10 +28,10 @@
 
 
 
-$db->exec("INSERT INTO cars(name, surname, piwa, ciastka) VALUES('$imie', '$sur', '$piwa', '$ciastka')");
+$db->exec("INSERT INTO orders(name, surname, piwa, ciastka) VALUES('$imie', '$sur', '$piwa', '$ciastka')");
 
 
-$res = $db->query('SELECT * FROM cars');
+$res = $db->query('SELECT * FROM orders');
 
 while ($row = $res->fetchArray()) {
     echo "{$row['id']} {$row['name']} {$row['surname']} {$row['piwa']} {$row['ciastka']} \n ";

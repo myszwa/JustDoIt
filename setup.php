@@ -14,5 +14,5 @@ $version = $db->querySingle('SELECT SQLITE_VERSION()');
 
 echo $version . "\n";
 
-$db->exec("CREATE TABLE cars(id INTEGER PRIMARY KEY, name TEXT, surname TEXT, piwa VALUE, ciastka VALUE)");
+$db->exec("CREATE TABLE IF NOT EXISTS orders(id INTEGER PRIMARY KEY, name TEXT, surname TEXT, piwa INT, ciastka INT)");
 
